@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .slider { width: 300px; overflow: hidden; }
+    .slides {
+      display: flex;
+      width: 300%;
+      transition: transform 0.5s;
+    }
+    .slide img { width: 300px; display: block; }
+
+    input[type="radio"] { display: none; }
+
+    #r1:checked ~ .slider .slides { transform: translateX(0); }
+    #r2:checked ~ .slider .slides { transform: translateX(-100%); }
+    #r3:checked ~ .slider .slides { transform: translateX(-200%); }
+
+    .nav { text-align: center; }
+    .nav label {
+      display: inline-block;
+      margin: 10px 5px;
+      width: 12px;
+      height: 12px;
+      background: #ccc;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    input:checked + label { background: #333; }
+  </style>
+</head>
+<body>
+
+  <input type="radio" name="r" id="r1" checked>
+  <input type="radio" name="r" id="r2">
+  <input type="radio" name="r" id="r3">
+
+  <div class="slider">
+    <div class="slides">
+      <div class="slide"><img src="https://via.placeholder.com/300x200/ff7f7f?text=1"></div>
+      <div class="slide"><img src="https://via.placeholder.com/300x200/7fbfff?text=2"></div>
+      <div class="slide"><img src="https://via.placeholder.com/300x200/7fff7f?text=3"></div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <label for="r1"></label>
+    <label for="r2"></label>
+    <label for="r3"></label>
+  </div>
+
+</body>
+</html>

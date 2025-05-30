@@ -1,0 +1,21 @@
+/* Parent element styles */
+.parent {
+    position: relative; /* Establishes positioning context for child */
+    width: 400px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    margin: 50px;
+    padding: 20px;
+}
+
+/* Child element styles */
+.child {
+    position: relative; /* Relative to its original position (itself) */
+    top: 30px;  /* Moves the element 30px down */
+    left: 50px; /* Moves the element 50px to the right */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}

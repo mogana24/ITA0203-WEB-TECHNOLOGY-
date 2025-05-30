@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Registration</title>
+  <link rel="stylesheet" href="5th.css" />
+</head>
+<body>
+
+  <form>
+    <label>Employer's Name:</label><br />
+    <input type="text" name="name" required /><br />
+
+    <label>Employee ID:</label><br />
+    <input type="text" name="id" required /><br />
+
+    <label>Address:</label><br />
+    <input type="text" name="address" required /><br />
+
+    <label>Department:</label><br />
+    <input type="text" name="department" required /><br />
+
+    <label>Mobile Number:</label><br />
+    <input type="tel" name="mobile" pattern="[0-9]{10}" required /><br />
+
+    <label>City:</label><br />
+    <select name="city" required>
+      <option value="">Select city</option>
+      <option>New York</option>
+      <option>Los Angeles</option>
+      <option>Chicago</option>
+    </select><br /><br />
+
+    <input type="submit" value="Register" />
+  </form>
+
+</body>
+</html>
